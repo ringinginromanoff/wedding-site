@@ -31,12 +31,13 @@
     .rir-nav > div:first-child img { height: 44px !important; }
     .rir-navlinks { gap: 12px 18px !important; }
     .rir-navlinks a { font-size: 11.5px !important; }
-    .rir-lace { width: 16px !important; opacity: 0.55 !important; }
+    .rir-lace { width: 22px !important; opacity: 0.6 !important; }
     .rir-schedule-grid { grid-template-columns: 118px 1fr !important; }
     .rir-story-strip { width: 82vw !important; max-width: 340px; }
+    .rir-story-strip img { height: 210px !important; }
   }
   @media (max-width: 430px) {
-    .rir-lace { width: 12px !important; opacity: 0.6 !important; }
+    .rir-lace { width: 18px !important; opacity: 0.65 !important; }
   }
 </style>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -582,7 +583,7 @@ class Component extends DCLogic {
       'p/EA128.jpg', 'p/EA136.jpg', 'p/EA182.jpg'
     ];
     const marqueePos = { 'p/EA72.jpg': 'center 32%', 'p/EA136.jpg': 'center 65%', 'p/EA182.jpg': 'center 30%' };
-    const marqueePhotos = marqueeSrcs.map(src => ({ src, pos: marqueePos[src] || 'center' }));
+    const marqueePhotos = marqueeSrcs.map(src => ({ src, pos: marqueePos[src] || 'center 28%' }));
 
     const target = new Date('2027-07-18T00:00:00-07:00').getTime();
     let diff = Math.max(0, target - this.state.now);
@@ -620,7 +621,7 @@ class Component extends DCLogic {
           "Emma and Andrew's love language looks a lot like new stamps on passports. From the beginning, they've always loved having another adventure on the calendar. The next place to explore, the next culture to experience, and the next opportunity to learn more about each other along the way.",
           "Their first trip together to Mexico was the perfect introduction to traveling as a couple, because almost nothing went according to plan. There were delays, unexpected detours, and plenty of moments where Emma's carefully organized itinerary had to adapt. Luckily, Andrew brought his signature approach: figure it out, laugh about it, and maybe grab a beer first.",
           "Since then, they've collected passport stamps from Japan, Italy, and countless weekends closer to home—taking cooking classes, wandering unfamiliar streets, searching for 1 a.m. ramen, and somehow celebrating a local Italian's birthday with homemade limoncello. Japan was especially memorable. Emma \"Japlanned\" every detail, and together they explored Tokyo, Kyoto, Osaka, and Kinosaki, learning through food, culture, and the people they met. They also confirmed one important fact; ramen is appropriate at any hour of the day.",
-          "Their passports already have plenty of stamps, but they're just getting started. Next up: exploring Portugal's wine culture and skiing in Japan. And if you want to follow along, you know you're a real one if you keep up with Salmonoff and Tunawitz on Polarsteps."
+          "Their passports already have plenty of stamps, but they're just getting started. Next up: exploring Portugal's wine culture and skiing in Japan. And if you want to follow along, you know you're a real one if you keep up with \"Salmonoff\" and \"Tunawitz\" on Polarsteps."
         ],
         photos: ['p/cabo_sunset.jpg', 'p/63D4F490-84E9-4BEC-B370-125A6417D72E_1_105_c.jpg', 'p/816715F0-D83D-4AF4-A429-F3271DDC8E51_1_105_c.jpg', 'p/3610408A-CBB4-4A87-A259-AFD9CD022ED8_1_105_c.jpg', 'p/JP_yukata.jpg'] },
       { numeral: 'Chapter Four', title: 'Creating a Home (Even When the Apartment Was Tiny)',
@@ -650,7 +651,7 @@ class Component extends DCLogic {
       ...ch,
       dir: i % 2 === 0 ? 'row' : 'row-reverse',
       tilt: i % 2 === 0 ? -2 : 2,
-      stripPhotos: ch.photos.slice(0, 6).map((src, idx) => ({ src, pos: (ch.photoPos && ch.photoPos[idx]) || 'center 38%' }))
+      stripPhotos: ch.photos.slice(0, 6).map((src, idx) => ({ src, pos: (ch.photoPos && ch.photoPos[idx]) || 'center 25%' }))
     }));
 
     const mapCats = [
