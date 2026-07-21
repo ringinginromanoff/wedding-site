@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="168" viewBox="0 0 120 168" fill="none">
+  <defs>
+    <pattern id="net" width="5.2" height="5.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5.2" height="5.2" fill="black"></rect>
+      <path d="M0 0 H5.2 M0 0 V5.2" stroke="white" stroke-width="0.55"></path>
+    </pattern>
+    <g id="bloomMask">
+      <g fill="white">
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(72)"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(144)"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(216)"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(288)"></ellipse>
+      </g>
+      <circle cx="0" cy="0" r="2.6" fill="black"></circle>
+      <circle cx="0" cy="-5" r="1.1" fill="black"></circle>
+      <circle cx="4.8" cy="1.5" r="1.1" fill="black"></circle>
+      <circle cx="-4.8" cy="1.5" r="1.1" fill="black"></circle>
+    </g>
+    <g id="unitMask">
+      
+      <g stroke="white" stroke-width="1" stroke-linecap="round">
+        <path d="M60 28 C 74 24, 88 22, 100 20" fill="none"></path>
+        <path d="M60 28 C 74 28, 88 28, 101 28" fill="none"></path>
+        <path d="M60 28 C 74 32, 88 35, 100 37" fill="none"></path>
+        <path d="M56 16 C 68 13, 80 11, 92 10" fill="none"></path>
+        <path d="M56 40 C 68 43, 80 45, 92 46" fill="none"></path>
+      </g>
+      
+      <use href="#bloomMask" transform="translate(22,16)"></use>
+      <use href="#bloomMask" transform="translate(38,22)"></use>
+      <use href="#bloomMask" transform="translate(20,34)"></use>
+      <use href="#bloomMask" transform="translate(40,38)"></use>
+      <use href="#bloomMask" transform="translate(30,28)"></use>
+      <use href="#bloomMask" transform="translate(12,24)"></use>
+      <use href="#bloomMask" transform="translate(48,28)"></use>
+    </g>
+    <mask id="lace" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="168">
+      <rect width="120" height="168" fill="black"></rect>
+      
+      <path d="M0 0 L54 0&#xA;        C 68 14, 68 42, 54 56&#xA;        C 68 70, 68 98, 54 112&#xA;        C 68 126, 68 154, 54 168&#xA;        L0 168 Z" fill="url(#net)"></path>
+      
+      <path d="M54 0 C 68 14, 68 42, 54 56 C 68 70, 68 98, 54 112 C 68 126, 68 154, 54 168" stroke="white" stroke-width="2" fill="none"></path>
+      <use href="#unitMask" transform="translate(0,0)"></use>
+      <use href="#unitMask" transform="translate(0,56)"></use>
+      <use href="#unitMask" transform="translate(0,112)"></use>
+    </mask>
+  </defs>
+  <rect width="120" height="168" fill="#6f8a6a" mask="url(#lace)"></rect>
+</svg>
