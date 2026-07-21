@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 96" fill="none">
+  <defs>
+    <g id="rirLeaf">
+      <path d="M0 0 C 7 -6, 22 -6.5, 30 0 C 22 6.5, 7 6, 0 0 Z" fill="none" stroke="#7d9478" stroke-width="1"></path>
+      <path d="M2 0 L27 0" stroke="#7d9478" stroke-width="0.8"></path>
+      <path d="M8 0 L13 -3.4 M8 0 L13 3.4 M14 0 L19 -3.2 M14 0 L19 3.2 M20 0 L24 -2.4 M20 0 L24 2.4" stroke="#a9bca3" stroke-width="0.6"></path>
+    </g>
+    <g id="rirCurl">
+      <path d="M0 0 C 10 2, 14 -6, 8 -10 C 3 -13, -2 -9, 1 -5" fill="none" stroke="#7d9478" stroke-width="1"></path>
+    </g>
+  </defs>
+  <g stroke-linecap="round">
+    
+    <g>
+      <path d="M444 48 C 380 48, 320 42, 258 42 C 200 42, 150 46, 96 50" fill="none" stroke="#7d9478" stroke-width="1.2"></path>
+      <use href="#rirLeaf" transform="translate(300,42) rotate(-24) scale(0.92)"></use>
+      <use href="#rirLeaf" transform="translate(250,42) rotate(-15) scale(1)"></use>
+      <use href="#rirLeaf" transform="translate(198,44) rotate(-8) scale(0.9)"></use>
+      <use href="#rirLeaf" transform="translate(336,50) rotate(158) scale(0.85)"></use>
+      <use href="#rirLeaf" transform="translate(286,52) rotate(150) scale(0.95)"></use>
+      <use href="#rirLeaf" transform="translate(236,52) rotate(158) scale(0.82)"></use>
+      <use href="#rirCurl" transform="translate(150,44) rotate(6) scale(1)"></use>
+      <use href="#rirCurl" transform="translate(160,58) rotate(180) scale(0.8)"></use>
+      
+      <g fill="#a9bca3" stroke="none">
+        <circle cx="120" cy="49" r="1.5"></circle><circle cx="110" cy="46" r="1.3"></circle><circle cx="112" cy="54" r="1.3"></circle>
+        <circle cx="100" cy="48" r="1.1"></circle><circle cx="103" cy="42" r="1.1"></circle>
+      </g>
+      <ellipse cx="216" cy="53" rx="3.4" ry="4.8" transform="rotate(22 216 53)" fill="#c2a878" stroke="none"></ellipse>
+    </g>
+    
+    <g transform="translate(900,0) scale(-1,1)">
+      <path d="M444 48 C 380 48, 320 42, 258 42 C 200 42, 150 46, 96 50" fill="none" stroke="#7d9478" stroke-width="1.2"></path>
+      <use href="#rirLeaf" transform="translate(300,42) rotate(-24) scale(0.92)"></use>
+      <use href="#rirLeaf" transform="translate(250,42) rotate(-15) scale(1)"></use>
+      <use href="#rirLeaf" transform="translate(198,44) rotate(-8) scale(0.9)"></use>
+      <use href="#rirLeaf" transform="translate(336,50) rotate(158) scale(0.85)"></use>
+      <use href="#rirLeaf" transform="translate(286,52) rotate(150) scale(0.95)"></use>
+      <use href="#rirLeaf" transform="translate(236,52) rotate(158) scale(0.82)"></use>
+      <use href="#rirCurl" transform="translate(150,44) rotate(6) scale(1)"></use>
+      <use href="#rirCurl" transform="translate(160,58) rotate(180) scale(0.8)"></use>
+      <g fill="#a9bca3" stroke="none">
+        <circle cx="120" cy="49" r="1.5"></circle><circle cx="110" cy="46" r="1.3"></circle><circle cx="112" cy="54" r="1.3"></circle>
+        <circle cx="100" cy="48" r="1.1"></circle><circle cx="103" cy="42" r="1.1"></circle>
+      </g>
+      <ellipse cx="216" cy="53" rx="3.4" ry="4.8" transform="rotate(22 216 53)" fill="#c2a878" stroke="none"></ellipse>
+    </g>
+    
+    <g>
+      <use href="#rirLeaf" transform="translate(450,44) rotate(-90) scale(1.15)"></use>
+      <g stroke="#7d9478" stroke-width="1">
+        <ellipse cx="450" cy="30" rx="3.6" ry="7"></ellipse>
+        <ellipse cx="460" cy="34" rx="3.6" ry="7" transform="rotate(60 460 34)"></ellipse>
+        <ellipse cx="460" cy="46" rx="3.6" ry="7" transform="rotate(120 460 46)"></ellipse>
+        <ellipse cx="450" cy="50" rx="3.6" ry="7"></ellipse>
+        <ellipse cx="440" cy="46" rx="3.6" ry="7" transform="rotate(60 440 46)"></ellipse>
+        <ellipse cx="440" cy="34" rx="3.6" ry="7" transform="rotate(120 440 34)"></ellipse>
+      </g>
+      <circle cx="450" cy="40" r="3" fill="#c2a878" stroke="none"></circle>
+    </g>
+  </g>
+</svg>

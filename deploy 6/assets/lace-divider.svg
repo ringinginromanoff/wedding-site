@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="896" height="104" viewBox="0 0 896 104" fill="none">
+  <defs>
+    <pattern id="dnet" width="5.2" height="5.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5.2" height="5.2" fill="black"></rect>
+      <path d="M0 0 H5.2 M0 0 V5.2" stroke="white" stroke-width="0.55"></path>
+    </pattern>
+    <g id="dbloomMask">
+      <g fill="white">
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(72)"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(144)"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(216)"></ellipse>
+        <ellipse cx="0" cy="-5" rx="3" ry="5.4" transform="rotate(288)"></ellipse>
+      </g>
+      <circle cx="0" cy="0" r="2.6" fill="black"></circle>
+      <circle cx="0" cy="-5" r="1.1" fill="black"></circle>
+      <circle cx="4.8" cy="1.5" r="1.1" fill="black"></circle>
+      <circle cx="-4.8" cy="1.5" r="1.1" fill="black"></circle>
+    </g>
+    <g id="dunitMask">
+      <g stroke="white" stroke-width="1" stroke-linecap="round" fill="none">
+        <path d="M44 56 C 40 70, 38 82, 36 96"></path>
+        <path d="M44 56 C 44 70, 44 82, 44 96"></path>
+        <path d="M44 56 C 48 70, 50 82, 52 96"></path>
+        <path d="M32 54 C 29 66, 27 78, 25 90"></path>
+        <path d="M56 54 C 59 66, 61 78, 63 90"></path>
+      </g>
+      <use href="#dbloomMask" transform="translate(28,26)"></use>
+      <use href="#dbloomMask" transform="translate(44,20)"></use>
+      <use href="#dbloomMask" transform="translate(60,26)"></use>
+      <use href="#dbloomMask" transform="translate(36,38)"></use>
+      <use href="#dbloomMask" transform="translate(52,38)"></use>
+      <use href="#dbloomMask" transform="translate(44,30)"></use>
+    </g>
+    <mask id="dlace" maskUnits="userSpaceOnUse" x="0" y="0" width="896" height="104">
+      <rect width="896" height="104" fill="black"></rect>
+      <path id="dscallopArea" d="M0 0 L896 0 L896 54&#xA;        C 884 62, 852 62, 840 54 C 828 62, 796 62, 784 54&#xA;        C 772 62, 740 62, 728 54 C 716 62, 684 62, 672 54&#xA;        C 660 62, 628 62, 616 54 C 604 62, 572 62, 560 54&#xA;        C 548 62, 516 62, 504 54 C 492 62, 460 62, 448 54&#xA;        C 436 62, 404 62, 392 54 C 380 62, 348 62, 336 54&#xA;        C 324 62, 292 62, 280 54 C 268 62, 236 62, 224 54&#xA;        C 212 62, 180 62, 168 54 C 156 62, 124 62, 112 54&#xA;        C 100 62, 68 62, 56 54 C 44 62, 12 62, 0 54 Z" fill="url(#dnet)"></path>
+      <path d="M0 54 C 12 62, 44 62, 56 54 C 68 62, 100 62, 112 54 C 124 62, 156 62, 168 54 C 180 62, 212 62, 224 54 C 236 62, 268 62, 280 54 C 292 62, 324 62, 336 54 C 348 62, 380 62, 392 54 C 404 62, 436 62, 448 54 C 460 62, 492 62, 504 54 C 516 62, 548 62, 560 54 C 572 62, 604 62, 616 54 C 628 62, 660 62, 672 54 C 684 62, 716 62, 728 54 C 740 62, 772 62, 784 54 C 796 62, 828 62, 840 54 C 852 62, 884 62, 896 54" stroke="white" stroke-width="2" fill="none"></path>
+      <use href="#dunitMask" transform="translate(12,0)"></use>
+      <use href="#dunitMask" transform="translate(124,0)"></use>
+      <use href="#dunitMask" transform="translate(236,0)"></use>
+      <use href="#dunitMask" transform="translate(348,0)"></use>
+      <use href="#dunitMask" transform="translate(460,0)"></use>
+      <use href="#dunitMask" transform="translate(572,0)"></use>
+      <use href="#dunitMask" transform="translate(684,0)"></use>
+      <use href="#dunitMask" transform="translate(796,0)"></use>
+    </mask>
+  </defs>
+  <rect width="896" height="104" fill="#6f8a6a" mask="url(#dlace)"></rect>
+</svg>
