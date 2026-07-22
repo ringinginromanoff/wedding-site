@@ -34,7 +34,7 @@
     .rir-lace { width: 22px !important; opacity: 0.6 !important; }
     .rir-schedule-grid { grid-template-columns: 118px 1fr !important; }
     .rir-story-strip { width: 82vw !important; max-width: 340px; }
-    .rir-story-strip img { height: 210px !important; }
+    .rir-story-strip img { height: 230px !important; }
   }
   @media (max-width: 430px) {
     .rir-lace { width: 18px !important; opacity: 0.65 !important; }
@@ -133,7 +133,7 @@
     </div>
 
     <div style="text-align:center; padding:64px 24px 8px; position:relative;">
-      <sc-if value="{{showLace}}" hint-placeholder-val="{{true}}"><div style="position:absolute; left:50%; top:8px; transform:translateX(-50%); width:min(440px,88%); height:320px; background:url('assets/lace-sage.png') center top / contain no-repeat; opacity:0.09; pointer-events:none; z-index:-1;"></div></sc-if>
+
       <p style="font-size:11px; letter-spacing:0.34em; text-transform:uppercase; margin:0 0 22px; color:var(--sage-deep); font-weight:400;">We're Getting Married!</p>
       <h1 style="font-family:'Cormorant Garamond', serif; font-weight:300; font-style:italic; font-size:clamp(32px, 6vw, 62px); margin:0; line-height:1.15; color:var(--ink);">Emma Jules Horowitz</h1>
       <div style="font-family:'Pinyon Script', cursive; font-size:clamp(24px, 3.6vw, 38px); color:var(--gold); margin:6px 0;">and</div>
@@ -196,7 +196,7 @@
         <div style="flex:0 0 auto; margin:0 auto;">
           <div class="rir-story-strip" style="background:var(--paper); padding:14px; box-shadow:0 16px 32px oklch(30% 0.02 60 / 0.16); width:224px; transform:rotate({{ch.tilt}}deg);">
             <sc-for list="{{ch.stripPhotos}}" as="sp" hint-placeholder-count="4">
-              <img src="{{sp.src}}" decoding="async" alt="Emma and Andrew" style="width:100%; height:178px; object-fit:cover; object-position:{{sp.pos}}; display:block; margin-bottom:10px;">
+              <img src="{{sp.src}}" decoding="async" alt="Emma and Andrew" style="width:100%; height:210px; object-fit:cover; object-position:{{sp.pos}}; display:block; margin-bottom:10px;">
             </sc-for>
             <img src="assets/monogram.png" alt="Emma &amp; Andrew" style="width:76px; display:block; margin:8px auto 2px;">
           </div>
@@ -378,7 +378,7 @@
   <div style="padding:28px 24px 44px; text-align:center;">
     <img src="assets/monogram.png" alt="Emma &amp; Andrew monogram" style="width:150px; display:block; margin:0 auto 12px;">
     <p style="font-size:11.5px; letter-spacing:0.1em; color:var(--ink-soft); margin:0;">July 18, 2027 · Rancho Las Lomas, Orange County</p>
-    <a onClick="{{signOut}}" style="cursor:pointer; display:inline-block; margin-top:14px; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft); opacity:0.7; border-bottom:1px solid var(--line);" style-hover="color:var(--sage-deep)">Re-enter password</a>
+    <a onClick="{{signOut}}" style="cursor:pointer; display:inline-block; margin-top:14px; padding:8px 16px; border:1px solid var(--line); font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft);" style-hover="color:var(--sage-deep); border-color:var(--sage-deep);">Re-enter password</a>
   </div>
 
   </div>
@@ -583,7 +583,7 @@ class Component extends DCLogic {
       'p/EA128.jpg', 'p/EA136.jpg', 'p/EA182.jpg'
     ];
     const marqueePos = { 'p/EA72.jpg': 'center 32%', 'p/EA136.jpg': 'center 65%', 'p/EA182.jpg': 'center 30%' };
-    const marqueePhotos = marqueeSrcs.map(src => ({ src, pos: marqueePos[src] || 'center 28%' }));
+    const marqueePhotos = marqueeSrcs.map(src => ({ src, pos: marqueePos[src] || 'center 38%' }));
 
     const target = new Date('2027-07-18T00:00:00-07:00').getTime();
     let diff = Math.max(0, target - this.state.now);
@@ -608,7 +608,7 @@ class Component extends DCLogic {
           "A beach day and sushi date followed soon after (the first of many), and by their third date they found themselves at Casa 12, a neighborhood Italian restaurant that would become one of their favorite spots. Many evenings after were spent wandering Marina del Rey and Venice, chasing sunsets, trying new restaurants, and somehow always ending up at Hinano, Andrew's beloved dive bar.",
           "At first, Emma didn't understand the obsession. But she quickly realized Hinano was never really about the bar, it was about the people. Andrew has always had a way of making anyone feel interesting: curious, open-minded, and genuinely fascinated by the stories of the people around him. And that was one of the first things Emma fell in love with."
         ],
-        photos: ['p/7C9890D2-7FDB-4E3D-A89F-7C668B3D2C4C_1_105_c.jpg', 'p/beach_cards.jpg', 'p/8538C0AF-83C2-41DF-B805-DD62B7440FD1_1_105_c.jpg', 'p/61DCD53E-630F-4CCA-846D-B559858AFA51_1_105_c.jpg', 'p/hinano_pool.jpg'], photoPos: ['center 15%'] },
+        photos: ['p/7C9890D2-7FDB-4E3D-A89F-7C668B3D2C4C_1_105_c.jpg', 'p/beach_cards.jpg', 'p/8538C0AF-83C2-41DF-B805-DD62B7440FD1_1_105_c.jpg', 'p/61DCD53E-630F-4CCA-846D-B559858AFA51_1_105_c.jpg', 'p/hinano_pool.jpg'], photoPos: ['center 68%', 'center 55%', 'center 42%', 'center 42%', 'center 62%'] },
       { numeral: 'Chapter Two', title: 'The Long Distance Era (and a Lot of FaceTime)',
         paragraphs: [
           "After a whirlwind first month together, Emma headed back to New York to finish medical school, and spontaneous beach dates became FaceTime calls across 3,000 miles. Emma's quiet nights of reading were replaced by conversations that regularly stretched past her self-imposed 9:00 p.m. bedtime.",
@@ -651,7 +651,7 @@ class Component extends DCLogic {
       ...ch,
       dir: i % 2 === 0 ? 'row' : 'row-reverse',
       tilt: i % 2 === 0 ? -2 : 2,
-      stripPhotos: ch.photos.slice(0, 6).map((src, idx) => ({ src, pos: (ch.photoPos && ch.photoPos[idx]) || 'center 25%' }))
+      stripPhotos: ch.photos.slice(0, 6).map((src, idx) => ({ src, pos: (ch.photoPos && ch.photoPos[idx]) || 'center 42%' }))
     }));
 
     const mapCats = [
